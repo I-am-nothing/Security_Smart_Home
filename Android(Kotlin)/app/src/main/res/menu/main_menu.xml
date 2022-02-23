@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Home">
+            <menu>
+                <item
+                    android:id="@+id/main_page"
+                    android:title="Home control"
+                    android:icon="@drawable/ic_home"/>
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Room">
+            <menu>
+                <item
+                    android:id="@+id/roomControl_page"
+                    android:title="Room control"
+                    android:icon="@drawable/ic_home2"/>
+                <item
+                    android:id="@+id/powerUsed_page"
+                    android:title="Power used"
+                    android:icon="@drawable/ic_power_used"/>
+                <item
+                    android:id="@+id/nav_administrator"
+                    android:title="Administrator"
+                    android:icon="@drawable/ic_manage"
+                    android:visible="false"/>
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="App">
+            <menu>
+                <item
+                    android:id="@+id/mode_page"
+                    android:title="Mode"
+                    android:icon="@drawable/ic_developer_mode"/>
+                <item
+                    android:id="@+id/setting_page"
+                    android:title="Settings"
+                    android:icon="@drawable/ic_settings"/>
+                <item
+                    android:id="@+id/nav_aboutUs"
+                    android:title="About us"
+                    android:icon="@drawable/ic_about_us"/>
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="Guest">
+        <menu>
+            <item
+                android:id="@+id/nav_guest"
+                android:title="Guest"
+                android:icon="@drawable/ic_guest"/>
+        </menu>
+    </item>
+
+</menu>

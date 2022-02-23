@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+
+    <ImageView
+        android:id="@+id/num1_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/num2_btn"
+        app:layout_constraintEnd_toStartOf="@+id/num2_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_tv"
+        app:srcCompat="@drawable/ic_password_null" />
+
+    <ImageView
+        android:id="@+id/num2_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/num2_btn"
+        app:layout_constraintEnd_toStartOf="@+id/num3_img"
+        app:layout_constraintStart_toEndOf="@+id/num1_img"
+        app:layout_constraintTop_toBottomOf="@+id/description_tv"
+        app:srcCompat="@drawable/ic_password_null" />
+
+    <Button
+        android:id="@+id/num0_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/coutom_numbtn_shadow"
+        android:fontFamily="casual"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/numBack_btn"
+        app:layout_constraintStart_toEndOf="@+id/biometric_btn"
+        app:layout_constraintTop_toBottomOf="@+id/num8_btn" />
+
+    <Button
+        android:id="@+id/biometric_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/custom_loginbtn_shadow"
+        android:fontFamily="casual"
+        android:padding="20dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/num0_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num7_btn" />
+
+    <Button
+        android:id="@+id/numBack_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/custom_back_shadow"
+        android:fontFamily="casual"
+        android:padding="30sp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/num0_btn"
+        app:layout_constraintTop_toBottomOf="@+id/num9_btn" />
+
+    <Button
+        android:id="@+id/num8_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/coutom_numbtn_shadow"
+        android:fontFamily="casual"
+        android:text="8"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/num0_btn"
+        app:layout_constraintEnd_toStartOf="@+id/num9_btn"
+        app:layout_constraintStart_toEndOf="@+id/num7_btn"
+        app:layout_constraintTop_toBottomOf="@+id/num5_btn" />
+
+    <Button
+        android:id="@+id/num7_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/coutom_numbtn_shadow"
+        android:fontFamily="casual"
+        android:text="7"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/biometric_btn"
+        app:layout_constraintEnd_toStartOf="@+id/num8_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num4_btn" />
+
+    <Button
+        android:id="@+id/num9_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/coutom_numbtn_shadow"
+        android:fontFamily="casual"
+        android:text="9"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/numBack_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/num8_btn"
+        app:layout_constraintTop_toBottomOf="@+id/num6_btn" />
+
+    <Button
+        android:id="@+id/num5_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/coutom_numbtn_shadow"
+        android:fontFamily="casual"
+        android:text="5"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/num8_btn"
+        app:layout_constraintEnd_toStartOf="@+id/num6_btn"
+        app:layout_constraintStart_toEndOf="@+id/num4_btn"
+        app:layout_constraintTop_toBottomOf="@+id/num2_btn" />
+
+    <Button
+        android:id="@+id/num4_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/coutom_numbtn_shadow"
+        android:fontFamily="casual"
+        android:text="4"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/num7_btn"
+        app:layout_constraintEnd_toStartOf="@+id/num5_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num1_btn" />
+
+    <Button
+        android:id="@+id/num6_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/coutom_numbtn_shadow"
+        android:fontFamily="casual"
+        android:text="6"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/num9_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/num5_btn"
+        app:layout_constraintTop_toBottomOf="@+id/num3_btn" />
+
+    <Button
+        android:id="@+id/num3_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/coutom_numbtn_shadow"
+        android:fontFamily="casual"
+        android:text="3"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/num2_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/num2_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/coutom_numbtn_shadow"
+        android:fontFamily="casual"
+        android:text="2"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/num3_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/num1_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/num1_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/coutom_numbtn_shadow"
+        android:fontFamily="casual"
+        android:text="1"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/num2_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="casual"
+        android:text="Fast Login"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/num2_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/num3_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/num2_btn"
+        app:layout_constraintEnd_toStartOf="@+id/num4_img"
+        app:layout_constraintStart_toEndOf="@+id/num2_img"
+        app:layout_constraintTop_toBottomOf="@+id/description_tv"
+        app:srcCompat="@drawable/ic_password_null" />
+
+    <ImageView
+        android:id="@+id/num4_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/num2_btn"
+        app:layout_constraintEnd_toStartOf="@+id/num5_img"
+        app:layout_constraintStart_toEndOf="@+id/num3_img"
+        app:layout_constraintTop_toBottomOf="@+id/description_tv"
+        app:srcCompat="@drawable/ic_password_null" />
+
+    <ImageView
+        android:id="@+id/num5_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/num2_btn"
+        app:layout_constraintEnd_toStartOf="@+id/num6_img"
+        app:layout_constraintStart_toEndOf="@+id/num4_img"
+        app:layout_constraintTop_toBottomOf="@+id/description_tv"
+        app:srcCompat="@drawable/ic_password_null" />
+
+    <ImageView
+        android:id="@+id/num6_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/num2_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/num5_img"
+        app:layout_constraintTop_toBottomOf="@+id/description_tv"
+        app:srcCompat="@drawable/ic_password_null" />
+
+    <TextView
+        android:id="@+id/description_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_tv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

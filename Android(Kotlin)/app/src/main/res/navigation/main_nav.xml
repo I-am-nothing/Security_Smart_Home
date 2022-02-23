@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/hello_page">
+
+    <fragment
+        android:id="@+id/hello_page"
+        android:name="com.sakun.security_home.fragmentPage.Hello_page"
+        android:label="Hello"
+        tools:layout="@layout/fragment_hello_page" >
+        <action
+            android:id="@+id/action_hello_page_to_fastLogin_page"
+            app:destination="@id/fastLogin_page" />
+        <action
+            android:id="@+id/action_hello_page_to_login_page"
+            app:destination="@id/login_page" />
+        <action
+            android:id="@+id/action_hello_page_to_main_page"
+            app:destination="@id/main_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/fastLogin_page"
+        android:name="com.sakun.security_home.fragmentPage.FastLogin_page"
+        android:label="Fast Login"
+        tools:layout="@layout/fragment_fast_login_page" >
+        <action
+            android:id="@+id/action_fastLogin_page_to_main_page"
+            app:destination="@id/main_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/main_page"
+        android:name="com.sakun.security_home.fragmentPage.Main_page"
+        android:label="Home"
+        tools:layout="@layout/fragment_main_page" >
+        <action
+            android:id="@+id/action_main_page_to_roomControl_page"
+            app:destination="@id/roomControl_page" />
+        <action
+            android:id="@+id/action_main_page_to_powerUsed_page"
+            app:destination="@id/powerUsed_page" />
+        <action
+            android:id="@+id/action_main_page_to_aboutUs_page"
+            app:destination="@id/aboutUs_page" />
+        <action
+            android:id="@+id/action_main_page_to_setting_page"
+            app:destination="@id/setting_page" />
+        <action
+            android:id="@+id/action_main_page_to_fastLogin_page"
+            app:destination="@id/fastLogin_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/roomControl_page"
+        android:name="com.sakun.security_home.fragmentPage.RoomControl_page"
+        android:label="Room Control"
+        tools:layout="@layout/fragment_room_control_page" />
+    <fragment
+        android:id="@+id/powerUsed_page"
+        android:name="com.sakun.security_home.fragmentPage.PowerUsed_page"
+        android:label="Power Used"
+        tools:layout="@layout/fragment_power_used_page" />
+    <fragment
+        android:id="@+id/aboutUs_page"
+        android:name="com.sakun.security_home.fragmentPage.AboutUs_page"
+        android:label="About Us"
+        tools:layout="@layout/fragment_about_us_page" />
+    <fragment
+        android:id="@+id/setting_page"
+        android:name="com.sakun.security_home.fragmentPage.Setting_page"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting_page" />
+    <fragment
+        android:id="@+id/login_page"
+        android:name="com.sakun.security_home.fragmentPage.Login_page"
+        android:label="Login"
+        tools:layout="@layout/fragment_login_page" >
+        <action
+            android:id="@+id/action_login_page_to_fastLogin_page"
+            app:destination="@id/fastLogin_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/mode_page"
+        android:name="com.sakun.security_home.fragmentPage.Mode_page"
+        android:label="Mode Change"
+        tools:layout="@layout/fragment_mode_page" >
+        <action
+            android:id="@+id/action_mode_page_to_outDoorMode_page"
+            app:destination="@id/outDoorMode_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/outDoorMode_page"
+        android:name="com.sakun.security_home.fragmentPage.OutDoorMode_page"
+        android:label="Out Door Mode"
+        tools:layout="@layout/fragment_out_door_mode_page" />
+</navigation>
