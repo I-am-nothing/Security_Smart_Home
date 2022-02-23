@@ -1,0 +1,18 @@
+﻿Build started...
+1>------ Build started: Project: Securtiy_home2, Configuration: Release Any CPU ------
+1>  Securtiy_home2 -> C:\Users\jdps9\source\repos\Securtiy_home2\Securtiy_home2\bin\Securtiy_home2.dll
+2>------ Publish started: Project: Securtiy_home2, Configuration: Release Any CPU ------
+2>Transformed Web.config using C:\Users\jdps9\source\repos\Securtiy_home2\Securtiy_home2\Web.Release.config into obj\Release\TransformWebConfig\transformed\Web.config.
+2>Auto ConnectionString Transformed Areas\HelpPage\Views\Web.config into obj\Release\CSAutoParameterize\transformed\Areas\HelpPage\Views\Web.config.
+2>Auto ConnectionString Transformed Views\Web.config into obj\Release\CSAutoParameterize\transformed\Views\Web.config.
+2>Auto ConnectionString Transformed obj\Release\TransformWebConfig\transformed\Web.config into obj\Release\CSAutoParameterize\transformed\Web.config.
+2>Copying all files to temporary location below for package/publish:
+2>obj\Release\Package\PackageTmp.
+2>Updating file (Default Web Site/security_home\bin\Securtiy_home2.dll).
+2>Updating file (Default Web Site/security_home\bin\Securtiy_home2.pdb).
+2>Adding ACLs for path (Default Web Site/security_home)
+2>Adding ACLs for path (Default Web Site/security_home)
+2>Publish Succeeded.
+2>Web App was published successfully http://localhost/security_home
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+========== Publish: 1 succeeded, 0 failed, 0 skipped ==========
